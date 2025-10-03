@@ -5,4 +5,16 @@ body{
 }
 .contenedor{
     display: grid;
+    grid-template-columns: repeat(2,1fr);/*2 columnas*/
+    gap: 20px;
+}
+.caja{
+    background-color: greenyellow;
+    padding: 40px;
+    border-radius: 10px;
+}
+@media(max-width:600px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
 }
