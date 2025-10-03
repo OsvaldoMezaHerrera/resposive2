@@ -13,8 +13,19 @@ body{
     padding: 40px;
     border-radius: 10px;
 }
-@media(max-width:600px){
+@media(max-width: 800px)and (min-width: 600px){
     .contenedor{
         grid-template-columns: 1fr;
+    }
+    .caja{
+        background-color: aquamarine;
+    }
+}
+@media(max-width: 600px){
+    .contenedor{
+        grid-template-columns: 1;
+    }
+    .caja{
+        background-color: brown;
     }
 }
